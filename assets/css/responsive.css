@@ -247,7 +247,7 @@
         width: 50%;
     }
     .mode_switcher {
-        margin-right: 35px;
+        margin-right: 5px;
     }
     .sc-product-item {
         margin-bottom: 50px;
@@ -310,7 +310,7 @@
         padding: 15px 23px;
     }
     .slider-inner .slider-content .heading {
-        font-size: 60px;
+        font-size: 45px;
     }
     .slider-inner .slider-content .sub-heading {
         font-size: 16px;
@@ -481,8 +481,10 @@
     }
 
     .countdown.style-2 .countdown__item {
-        width: 65px;
-    height: 65px;
+        width: auto;
+        height: auto;
+        padding: 12px 13px 15px 13px;
+        margin-right: 10px;
     }
     .item-details-page .item-media {
         padding-top: 110px;
@@ -551,6 +553,7 @@
         width: 35px;
         height: 35px;
         min-width: 35px;
+        margin-left: 10px;
     }
 
     .sc-product-item.style-7 {

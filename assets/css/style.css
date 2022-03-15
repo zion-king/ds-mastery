@@ -1044,7 +1044,7 @@ a:focus {
 }
 
 .is_dark {
-    --bg-body: rgb(39,26,61) ;
+    --bg-body: rgb(30,30,53) ;
     --bg-topbar: #343444;
     --bg-header : rgb(25,6,40);
     --bg-slider: rgb(25,6,40);
@@ -1203,15 +1203,23 @@ a:focus {
 /* style-2 */
 .countdown.style-2  {
     max-width: 355px;
-    padding: 15px;
+    padding: 15px 10px;
 }
 .countdown.style-2 > span {
     width: auto;
 }
 
+.countdown.style-2a  {
+    max-width: 355px;
+    padding: 15px 10px;
+}
+.countdown.style-2a > span {
+    width: auto;
+}
+
 .countdown.style-2 .countdown__item {
     display: inline-grid;
-    padding: 7px 14px 15px;
+    padding: 12px 13px 15px 13px;
     text-align: center;
     align-items: center;
     background: #FFFFFF;
@@ -1221,20 +1229,46 @@ a:focus {
     margin-right: 15px;
 }
 
+.countdown.style-2a .countdown__item {
+    display: inline-grid;
+    padding: 7px 12px 9px 12px;
+    text-align: center;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 60px rgba(99, 69, 237, 0.15);
+    border-radius: 7px;
+    color: #000;
+    margin-right: 5px;
+}
+
 .countdown.style-2 .countdown__item:last-child {
     margin-right: 0;
 }
 
 .countdown.style-2 .countdown__item .countdown__value {
-    font-size: 27px;
+    font-size: 24px;
     font-weight: 600;
     margin-bottom: 5px;
 }
 
-
 .countdown.style-2 .countdown__item .countdown__label {
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 600;
+}
+
+
+.countdown.style-2a .countdown__item .countdown__value {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 2px;
+    padding: 0px;
+}
+
+
+.countdown.style-2a .countdown__item .countdown__label {
+    font-size: 9px;
+    font-weight: 600;
+    padding:  0px;
 }
 /* socical icon */
 .topbar-right .socical-icon li {
@@ -1978,7 +2012,7 @@ a:focus {
     height: 45px;
     min-width: 45px;
     font-size: 16px;
-    margin-left: 10px;
+    margin-left: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
