@@ -42,6 +42,7 @@
 :root {
     /* color */
     --bg-body           : #fff;
+    --bg-body-2         : #FFFFFF;
     --bg-topbar         : #F9F9F9;
     --bg-header         : #E5E5E5;
     --bg-slider         : #14141F;
@@ -68,6 +69,7 @@
 
 .is_dark {
     --bg-body           : #222232;
+    --bg-body-2         : #0A0A2C;
     --bg-topbar         : #343444;
     --bg-header         : #3D3D53;
     --bg-slider         : #14141F;
@@ -93,7 +95,7 @@
     --primary-color5: #fff;
     --border-color-2    : rgba(255, 255, 255, 0.12);
     --bg-newletter: #222232;
-    --button-2:         linear-gradient(132.41deg, #6345ED 18.03%, #DC39FC 81.29%);
+    --button-2          : #6345ED;
 }
 
 /* PreLoad
@@ -166,7 +168,7 @@
 .sc-button {
     display      : inline-block;
     position     : relative;
-    padding      : 9px 22px;
+    padding      : 14px 24px;
     border-radius: 100px !important;
     border       : 0 none;
     outline      : 0 none;
@@ -189,8 +191,8 @@
 }
 
 .sc-button.btn-bordered-white {
-    background: transparent none repeat scroll 0 0;
-    border    : 2px solid rgba(0, 0, 0, 0.1);
+    background: var(--primary-color5) none repeat scroll 0 0;
+    /* border    : 2px solid rgba(0, 0, 0, 0.1); */
 }
 
 .is_dark .sc-button.btn-bordered-white {
@@ -202,6 +204,7 @@
     content           : "";
     height            : calc(100% + 4px);
     width             : calc(100% + 4px);
+    color             : #fff;
     background-color  : navy;
     top               : -2px;
     left              : -2px;
