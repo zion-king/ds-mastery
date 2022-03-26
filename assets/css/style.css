@@ -1219,7 +1219,7 @@ a:focus {
 
 .countdown.style-2 .countdown__item {
     display: inline-grid;
-    padding: 12px 13px 15px 13px;
+    padding: 12px 15px 15px 15px;
     text-align: center;
     align-items: center;
     background: #FFFFFF;
@@ -1231,14 +1231,14 @@ a:focus {
 
 .countdown.style-2a .countdown__item {
     display: inline-grid;
-    padding: 7px 12px 9px 12px;
+    padding: 8px 17px 13px 17px;
     text-align: center;
     align-items: center;
     background: #FFFFFF;
     box-shadow: 4px 4px 60px rgba(99, 69, 237, 0.15);
     border-radius: 7px;
     color: #000;
-    margin-right: 5px;
+    margin-right: 9px;
 }
 
 .countdown.style-2 .countdown__item:last-child {
@@ -1258,7 +1258,7 @@ a:focus {
 
 
 .countdown.style-2a .countdown__item .countdown__value {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 600;
     margin-bottom: 2px;
     padding: 0px;
@@ -1266,7 +1266,7 @@ a:focus {
 
 
 .countdown.style-2a .countdown__item .countdown__label {
-    font-size: 9px;
+    font-size: 12px;
     font-weight: 600;
     padding:  0px;
 }

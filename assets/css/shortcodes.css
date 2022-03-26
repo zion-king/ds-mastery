@@ -43,6 +43,7 @@
     /* color */
     --bg-body           : #fff;
     --bg-body-2         : #FFFFFF;
+    --bg-body-3         : #fff;
     --bg-topbar         : #F9F9F9;
     --bg-header         : #E5E5E5;
     --bg-slider         : #14141F;
@@ -70,6 +71,7 @@
 .is_dark {
     --bg-body           : #222232;
     --bg-body-2         : #0A0A2C;
+    --bg-body-3         : #172244;
     --bg-topbar         : #343444;
     --bg-header         : #3D3D53;
     --bg-slider         : #14141F;
@@ -1382,7 +1384,7 @@ blockquote .author::before {
 
 .is_dark .sc-product-item.style-4.bg-color-dark,
 .is_dark .sc-product-item.style-3.bg-color-dark {
-    background: #030303;
+    background: var(--bg-body-3);
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
