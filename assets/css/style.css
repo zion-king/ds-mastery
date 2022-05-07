@@ -1217,6 +1217,14 @@ a:focus {
     width: auto;
 }
 
+.countdown.style-2b  {
+    max-width: 355px;
+    padding: 25px 8px;
+}
+.countdown.style-2b > span {
+    width: auto;
+}
+
 .countdown.style-2 .countdown__item {
     display: inline-grid;
     padding: 12px 15px 15px 15px;
@@ -1226,7 +1234,7 @@ a:focus {
     box-shadow: 4px 4px 60px rgba(99, 69, 237, 0.15);
     border-radius: 7px;
     color: #000;
-    margin-right: 15px;
+    margin-right: 12px;
 }
 
 .countdown.style-2a .countdown__item {
@@ -1239,6 +1247,18 @@ a:focus {
     border-radius: 7px;
     color: #000;
     margin-right: 9px;
+}
+
+.countdown.style-2b .countdown__item {
+    display: inline-grid;
+    padding: 11px 17px 15px 17px;
+    text-align: center;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 60px rgba(99, 69, 237, 0.15);
+    border-radius: 7px;
+    color: #000;
+    margin: 0px 4px;
 }
 
 .countdown.style-2 .countdown__item:last-child {
@@ -1267,6 +1287,20 @@ a:focus {
 
 .countdown.style-2a .countdown__item .countdown__label {
     font-size: 12px;
+    font-weight: 600;
+    padding:  0px;
+}
+
+.countdown.style-2b .countdown__item .countdown__value {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 2px;
+    padding: 0px;
+}
+
+
+.countdown.style-2b .countdown__item .countdown__label {
+    font-size: 13px;
     font-weight: 600;
     padding:  0px;
 }

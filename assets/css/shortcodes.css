@@ -179,7 +179,7 @@
 }
 
 .sc-button.style span {
-    padding-left: 20px;
+    padding-left: 25px;
 }
 
 .sc-button span {
@@ -207,7 +207,7 @@
     height            : calc(100% + 4px);
     width             : calc(100% + 4px);
     color             : #fff;
-    background-color  : navy;
+    background-color  : var(--button-2);
     top               : -2px;
     left              : -2px;
     border-radius     : 100px;
@@ -240,7 +240,7 @@
     font-size         : 14px;
     left              : 0px;
     font-weight       : 700;
-    top               : -1px;
+    top               : 2px;
     color             : #DC39FC;
     -webkit-transition: all 0.3s ease;
     -moz-transition   : all 0.3s ease;
@@ -515,7 +515,7 @@ blockquote .author::before {
     position       : relative;
     background     : linear-gradient(132.71deg, #6345ED 18.12%, #DC39FC 81.74%);
     border-radius  : 30px;
-    padding        : 23px 45px 0px 68px;
+    padding        : 20px 55px;
     justify-content: space-between;
     margin-bottom  : -172px;
 }
@@ -526,7 +526,7 @@ blockquote .author::before {
 
 .new-letter-content {
     width  : 66%;
-    padding: 42px 0;
+    padding: 32px 0;
 }
 
 .new-letter-img {
@@ -856,11 +856,17 @@ blockquote .author::before {
     padding: 18px 0 25px 0;
 }
 
-.sc-author-card .card-content h5 {
+.sc-product-item .card-content {
+    padding: 10px 0;
+}
+
+.sc-author-card .card-content h5,
+.sc-product-item .card-content h5 {
     margin-bottom: 7px;
 }
 
-.sc-author-card .card-content .details {
+.sc-author-card .card-content .details,
+.sc-product-item .card-content .details {
     font-size         : 13px;
     line-height       : 18px;
     color             : var(--color-2);
@@ -871,7 +877,8 @@ blockquote .author::before {
     transition        : all 0.3s ease-in-out;
 }
 
-.sc-author-card .card-content .details {
+.sc-author-card .card-content .details,
+.sc-product-item .card-content .details {
     font-size: 14px;
 }
 
@@ -1063,7 +1070,8 @@ blockquote .author::before {
 .sc-product-item .product-img .avatar-box,
 .sc-product-item .product-img label,
 .sc-product-item .product-img .countdown,
-.sc-product-item .product-img .sc-button {
+.sc-product-item .product-img .sc-button,
+.sc-author-card .card-media .sc-button {
     position: absolute;
 }
 
@@ -1153,7 +1161,8 @@ blockquote .author::before {
     transform: translateY(-5px);
 }
 
-.sc-product-item .product-img .sc-button.style {
+.sc-product-item .product-img .sc-button.style,
+.sc-author-card .card-media .sc-button.style {
     top: 70%;
     left: 50%;
     transform: translate(-50%,-30%);
@@ -1174,7 +1183,8 @@ blockquote .author::before {
     transition: all 0.5s ease;
 }
 
-.sc-product-item .product-img .sc-button.style::after {
+.sc-product-item .product-img .sc-button.style::after,
+.sc-author-card .card-media .sc-button.style::after {
     content: "";
     position: absolute;
     border-radius: 100px;
@@ -1192,7 +1202,8 @@ blockquote .author::before {
     transition: all 0.3s ease;
 }
 
-.sc-product-item .product-img .sc-button.style:hover::after {
+.sc-product-item .product-img .sc-button.style:hover::after,
+.sc-author-card .card-media .sc-button.style:hover::after {
     opacity: 1;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
@@ -1227,7 +1238,19 @@ blockquote .author::before {
     bottom          : 0;
     right           : 25px;
     transform       : translateY(50%);
-    padding         : 3px 10px;
+    padding         : 5px 10px;
+    background-color: #6345ED;
+    border-radius   : 5px;
+    font-size       : 14px;
+    color           : #fff;
+    font-weight     : 600;
+}
+
+.sc-author-card .card-media label {
+    bottom          : 0;
+    right           : 25px;
+    transform       : translateY(50%);
+    padding         : 5px 10px;
     background-color: #6345ED;
     border-radius   : 5px;
     font-size       : 14px;
@@ -1768,7 +1791,7 @@ blockquote .author::before {
 }
 
 .sc-heading h3 {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .sc-heading .desc {
@@ -2465,8 +2488,8 @@ blockquote .author::before {
 }
 
 .slider-inner .slider-content .button-slider .sc-button span::before {
-    font-size: 17px;
-    top: 2px;
+    font-size: 14px;
+    top: 0px;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
@@ -2484,14 +2507,12 @@ blockquote .author::before {
 
 .slider-inner .slider-content .button-slider .sc-button.active.btn-bordered-white,
 .slider-inner .slider-content .button-slider .sc-button.btn-bordered-white::after {
-    background-image: linear-gradient(
-    132.41deg, #14161B 18.03%, #14161B 81.29%);
+    background-color: var(--button-2);
 }
 
 .is_dark .slider-inner .slider-content .button-slider .sc-button.active.btn-bordered-white,
 .is_dark .slider-inner .slider-content .button-slider .sc-button.btn-bordered-white::after {
-    background-image: linear-gradient(
-    132.41deg, #6345ED 18.03%, #DC39FC 81.29%);
+   background-color: var(--button-2);
 }
 
 .slider-inner .slider-content .button-slider .sc-button.active span::before,
@@ -3014,7 +3035,7 @@ blockquote .author::before {
     font-size: 18px;
     font-weight: 500;
 line-height: 28px;
-margin-bottom: 40px;
+margin-bottom: 25px;
 }
 .item-details-page .author-item {
     display: flex;
