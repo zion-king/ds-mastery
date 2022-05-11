@@ -861,7 +861,8 @@ blockquote .author::before {
 }
 
 .sc-author-card .card-content h5,
-.sc-product-item .card-content h5 {
+.sc-product-item .card-content h5,
+.sc-product-item .card-content h6 {
     margin-bottom: 7px;
 }
 
